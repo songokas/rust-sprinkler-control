@@ -1,0 +1,28 @@
+host: 192.168.0.140
+name: laistymas
+
+node: laistymas/nodes/the-one
+
+soil_sensor:
+    dry: 500
+    wet: 300
+
+zones:
+  uz-namo:
+    times:
+      - start: 6:00
+        end: 6:10
+    control_pin: 6
+    sensor_pin: 15
+  pagrindine:
+    times:
+      - start: 6:40
+        end: 7:10
+    control_pin: 9
+    sensor_pin: 14
+  kapiliarine:
+    times:
+      - start: 7:10
+        end: 7:40
+    control_pin: 2
+    sensor_pin: 16
